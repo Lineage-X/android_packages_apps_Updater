@@ -158,7 +158,7 @@ public class Utils {
 
         String serverUrl = SystemProperties.get(Constants.PROP_UPDATER_URI);
         if (serverUrl.trim().isEmpty()) {
-            serverUrl = context.getString(R.string.updater_server_url);
+            serverUrl = context.getString(R.string.updater_server_url,device);
         }
 
         return serverUrl;
